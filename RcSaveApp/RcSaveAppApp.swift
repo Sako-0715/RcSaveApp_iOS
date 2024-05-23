@@ -11,7 +11,7 @@ import SwiftUI
 struct RcSaveAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RcHistoryView()
         }
     }
 }
