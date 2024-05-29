@@ -6,14 +6,14 @@
 //
 
 import Foundation
-//import 
+import Alamofire
 class RcHistoryAPI {
     /*
      APIファイルにアクセスするためのメソッド
      */
     private func Api() {
         let url = "http://localhost:8888/KeepFood/iOS/Controller/ShopingHistoryController.php"
-        AF.request(url).responseData { response in
+        AF.request(url).responseData{ response in
             switch response.result {
             case.success(let data):
                 do {
