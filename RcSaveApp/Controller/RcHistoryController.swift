@@ -6,7 +6,25 @@
 //
 
 import Foundation
-class RcHistoryController {
+import Combine
+
+class RcHistoryController: ObservableObject {  // ここでObservableObjectに準拠
+    
+    // API通信時に取得する配列
+    @Published var historyData: [HistoryData] = []
+    // APIモデルにを定義
+    private var historyApi = RcHistoryAPIModel()
+    private var cancellables = Set<AnyCancellable>()
+    
+    init() {
+            // APIモデルの変更を監視して、コントローラーのプロパティを更新
+        historyApi.$historyDataArray
+                .sink { [weak self] data in
+                    self?.historyData = data
+                }
+                .store(in: &cancellables)
+        }
+    
     /*
      商品名の文字数が多い場合はフォントサイズを調整するためのメソッド
      */

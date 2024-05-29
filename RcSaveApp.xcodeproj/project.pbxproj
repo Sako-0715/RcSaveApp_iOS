@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		4F1D122A2BFE3BFA00E75EB3 /* RcHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D12292BFE3BFA00E75EB3 /* RcHistoryView.swift */; };
 		4F1D122F2BFE470F00E75EB3 /* RcHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D122E2BFE470F00E75EB3 /* RcHistoryController.swift */; };
+		4F8705142BFF93A7009933F9 /* RcHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8705132BFF93A7009933F9 /* RcHistoryModel.swift */; };
 		4FC1755B2BFCF6260080B1FE /* RcSaveAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC1755A2BFCF6260080B1FE /* RcSaveAppApp.swift */; };
 		4FC1755D2BFCF6260080B1FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC1755C2BFCF6260080B1FE /* ContentView.swift */; };
 		4FC1755F2BFCF62B0080B1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC1755E2BFCF62B0080B1FE /* Assets.xcassets */; };
 		4FC175622BFCF62B0080B1FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC175612BFCF62B0080B1FE /* Preview Assets.xcassets */; };
-		4FE3D61D2BFF891400F37AA3 /* RcHistoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3D61C2BFF891400F37AA3 /* RcHistoryAPI.swift */; };
+		4FE3D61D2BFF891400F37AA3 /* RcHistoryAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3D61C2BFF891400F37AA3 /* RcHistoryAPIModel.swift */; };
 		7FC8937234653C3FB9CA80C1 /* Pods_RcSaveApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CCD3370B6BEC77A88A92B6 /* Pods_RcSaveApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F1D12292BFE3BFA00E75EB3 /* RcHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RcHistoryView.swift; sourceTree = "<group>"; };
 		4F1D122E2BFE470F00E75EB3 /* RcHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RcHistoryController.swift; sourceTree = "<group>"; };
+		4F8705132BFF93A7009933F9 /* RcHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RcHistoryModel.swift; sourceTree = "<group>"; };
 		4FC175572BFCF6260080B1FE /* RcSaveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RcSaveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC1755A2BFCF6260080B1FE /* RcSaveAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RcSaveAppApp.swift; sourceTree = "<group>"; };
 		4FC1755C2BFCF6260080B1FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FC1755E2BFCF62B0080B1FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FC175612BFCF62B0080B1FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4FE3D61C2BFF891400F37AA3 /* RcHistoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RcHistoryAPI.swift; sourceTree = "<group>"; };
+		4FE3D61C2BFF891400F37AA3 /* RcHistoryAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RcHistoryAPIModel.swift; sourceTree = "<group>"; };
 		87C841630FDF8A3AB7D49975 /* Pods-RcSaveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RcSaveApp.debug.xcconfig"; path = "Target Support Files/Pods-RcSaveApp/Pods-RcSaveApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A114BD0D719E1B12AEE50C8C /* Pods-RcSaveApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RcSaveApp.release.xcconfig"; path = "Target Support Files/Pods-RcSaveApp/Pods-RcSaveApp.release.xcconfig"; sourceTree = "<group>"; };
 		A7CCD3370B6BEC77A88A92B6 /* Pods_RcSaveApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RcSaveApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +64,8 @@
 		4F1D122C2BFE46BA00E75EB3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4FE3D61C2BFF891400F37AA3 /* RcHistoryAPI.swift */,
+				4FE3D61C2BFF891400F37AA3 /* RcHistoryAPIModel.swift */,
+				4F8705132BFF93A7009933F9 /* RcHistoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,7 +124,6 @@
 				87C841630FDF8A3AB7D49975 /* Pods-RcSaveApp.debug.xcconfig */,
 				A114BD0D719E1B12AEE50C8C /* Pods-RcSaveApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -240,10 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F1D122A2BFE3BFA00E75EB3 /* RcHistoryView.swift in Sources */,
-				4FE3D61D2BFF891400F37AA3 /* RcHistoryAPI.swift in Sources */,
+				4FE3D61D2BFF891400F37AA3 /* RcHistoryAPIModel.swift in Sources */,
 				4FC1755D2BFCF6260080B1FE /* ContentView.swift in Sources */,
 				4FC1755B2BFCF6260080B1FE /* RcSaveAppApp.swift in Sources */,
 				4F1D122F2BFE470F00E75EB3 /* RcHistoryController.swift in Sources */,
+				4F8705142BFF93A7009933F9 /* RcHistoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

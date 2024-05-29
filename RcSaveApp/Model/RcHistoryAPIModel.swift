@@ -7,11 +7,17 @@
 
 import Foundation
 import Alamofire
-class RcHistoryAPI {
+import Combine
+
+class RcHistoryAPIModel: ObservableObject {
+    
+    // 投稿した履歴が入る配列
+    @Published var historyDataArray: [HistoryData] = []
+    
     /*
      APIファイルにアクセスするためのメソッド
      */
-    private func Api() {
+    func Api() {
         let url = "http://localhost:8888/KeepFood/iOS/Controller/ShopingHistoryController.php"
         AF.request(url).responseData{ response in
             switch response.result {

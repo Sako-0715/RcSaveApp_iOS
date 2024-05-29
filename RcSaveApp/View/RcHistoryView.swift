@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RcHistoryView: View {
     
+    @StateObject var controller = RcHistoryController()
+    
     // 投稿画像が入る変数
     @State private var image: UIImage? = nil
     
